@@ -1,0 +1,149 @@
+.pause-button {
+  background-color: #98FB98;
+  color: black;
+  transition-duration: 0.5s;
+  border-color: black;
+  border: solid 5px black;
+}
+
+.pause-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+
+.slider2 {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 30px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border: solid 3px black;
+}
+
+.slider2:hover {
+  opacity: 1;
+}
+
+.slider2::-webkit-slider-thumb {
+  border: solid 3px black;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #6028A4;
+  cursor: pointer;
+}
+
+.slider2::-moz-range-thumb {
+  border: solid 3px black;
+  width: 30px;
+  height: 30px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.sizeimg {margin-top: 7px;
+margin-left: 9.5px;}
+
+.speedimg { margin-top: 5px; margin-left: 0px;}
+
+.circle-button {
+  height: 21px;
+  width: 21px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #6028A4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.square-button {
+   height:20px;
+   width:20px;
+   background-color: white;
+   border: 2px solid black;
+}
+
+.button-clicked {
+ background-color: red;
+ color: white;
+}
+
+.button-clicked:hover {
+ background-color: #98FB98;
+ color: black;
+}
+
+.border-solid {
+  border-style: solid;
+  border-color: black;
+  border-width: 9px;
+  cursor: pointer;
+}
